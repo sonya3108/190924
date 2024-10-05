@@ -13,7 +13,7 @@ print(move_zeros_to_end([9, 0.0, 0, 9, 1, 2, 0, 1, 0, 1, 0.0, 3, 0, 1, 9, 0, 0, 
 
 print(move_zeros_to_end(["a", 0, 0, "b", "c", "d", 0, 1, 0, 1, 0, 3, 0, 1, 9, 0, 0, 0, 0, 9]))
 print(move_zeros_to_end(["a", 0, 0, "b", None, "c", "d", 0, 1, False, 0, 1, 0, 3, [], 0, 1, 9, 0, 0, {}, 0, 0, 9]))
-print(move_zeros_to_end([, 1, None, 2, False, 1, 0]))
+print(move_zeros_to_end([ 1, None, 2, False, 1, 0]))
 print(move_zeros_to_end(["a", "b"]))
 print(move_zeros_to_end([2, 8]))
 print(move_zeros_to_end([10]))
