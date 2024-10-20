@@ -40,11 +40,46 @@ result_intermediate = find_most_frequent_shortest_word(text)
 print("Intermediate level result:", result_intermediate)
 
 # 3
+import re
+from collections import Counter
+
+def read_file(filename):
+    with open(filename, 'r') as file:
+        return file.read()
+
+
+def find_most_frequent_shortest_word(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    word_counts = Counter(words)
+
+
+    most_frequent_shortest_word = min(word_counts, key=lambda word: (len(word), -word_counts[word]))
+
+    return most_frequent_shortest_word
+
+
 def replace_frequent_word_with_caps(text, word_to_replace):
+
     pattern = re.compile(r'\b' + re.escape(word_to_replace) + r'\b', re.IGNORECASE)
+
+
     updated_text = pattern.sub(word_to_replace.upper(), text)
+
     return updated_text
 
-updated_text = replace_frequent_word_with_caps(text, result_intermediate)
-print("Advanced level result:\n", updated_text)
+def advanced_solution(filename):
+    text = read_file(filename)
+
+
+    most_frequent_shortest_word = find_most_frequent_shortest_word(text)
+    print(f"Найкоротше і найчастіше слово: {most_frequent_shortest_word}")
+    updated_text = replace_frequent_word_with_caps(text, most_frequent_shortest_word)
+
+
+    print("\nОновлений текст:")
+    print(updated_text)
+
+
+advanced_solution("C:/Users/Admin/Desktop/190924/LVL_2_Python_group_2024/input_1.txt")
+
 
