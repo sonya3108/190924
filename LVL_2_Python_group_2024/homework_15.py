@@ -76,12 +76,12 @@ def sum_first_n_results(n):
 history = {}
 
 
-perform_operation("add", 4, 17)
-perform_operation("subtract", 10, 5)
-perform_operation("multiply", 3, 7)
-perform_operation("divide", 20, 4)
-perform_operation("power", 2, 3)
-perform_operation("modulus", 10, 3)
+perform_operation("add", 9, 20)
+perform_operation("subtract", 16, 0)
+perform_operation("multiply", 8, 123)
+perform_operation("divide", 200, 45)
+perform_operation("power", 23, 3)
+perform_operation("modulus", 101, 34)
 perform_operation("square_root", 16)
 
 
