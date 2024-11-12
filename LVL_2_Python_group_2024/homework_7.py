@@ -1,4 +1,4 @@
-"""#7"""
+
 def count_vowels_letters(text:str, *, isvowel:bool = True)->int:
     '''
     Функція обчислює кількість голосних літер або приголосних
