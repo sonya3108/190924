@@ -34,7 +34,7 @@ def most_popular(text:str)->list:
 with open('input_8.txt', 'r', encoding='utf-8') as fl:
     str_1 = fl.read()
 
-#print(most_popular(str_1))
+print(most_popular(str_1))
 
 with open('output.txt', 'w', encoding='utf-8') as fl:
     fl.write(f'most popular letter(s) is: {most_popular(str_1)}')
